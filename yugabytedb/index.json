@@ -13,6 +13,7 @@
     "intro": {
       "text": "intro.md",
       "code": "foreground.sh"
+      "courseData": "env-setup.sh",
     },
     "finish": {
       "text": "finish.md"
