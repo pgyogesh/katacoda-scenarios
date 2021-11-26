@@ -3,5 +3,6 @@ do
   echo "Waiting for environment to setup"
   sleep 5
 done
+clear
 docker exec -it yugabyte /bin/bash
 ysqlsh
