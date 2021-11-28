@@ -1,7 +1,7 @@
-until docker exec -it yugabyte /home/yugabyte/bin/ysqlsh -Atc 'SELECT 1' > /dev/null 2>&1
+until [ -f /tmp/setup.done ]
 do
-  echo "Waiting for environment to setup"
-  sleep 5
+  echo "Yugabyte is setting up"
+  sleep 3
 done
 clear
 docker exec -it yugabyte /bin/bash
