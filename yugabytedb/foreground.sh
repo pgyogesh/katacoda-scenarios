@@ -1,4 +1,4 @@
-until docker exec -it yugabyte /bin/bash ls /tmp/setup.done
+until docker exec -it yugabyte ls /tmp/setup.done
 do
   echo "Yugabyte is setting up. Please wait..."
   sleep 3
