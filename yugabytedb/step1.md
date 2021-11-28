@@ -5,4 +5,5 @@ Install Yugabyte using following command.
 
 Access YSQL using following command.
 
-`docker exec -it yugabyte /home/yugabyte/bin/ysqlsh`
+`docker exec -it yugabyte /home/yugabyte/bin/ysqlsh`{{execute}}
+`docker exec -it yugabyte /bin/bash`{{execute}}
