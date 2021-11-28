@@ -15,6 +15,12 @@
       "code": "initProgress.sh",
       "courseData": "env-setup.sh"
     },
+    "assets": {
+      "host01": [
+       {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+       {"file": "prepareStep.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
+    },
     "finish": {
       "text": "finish.md"
     }
