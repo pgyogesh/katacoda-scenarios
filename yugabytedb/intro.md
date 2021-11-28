@@ -1,1 +1,1 @@
-Click Start Scenario to proceed.
+### YugabyteDB Playground
