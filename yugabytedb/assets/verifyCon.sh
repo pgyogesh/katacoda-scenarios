@@ -1,10 +1,10 @@
-var=0
-while [ $var -eq 0 ]
+var="Not accepting"
+while [ "$var" = "Not accepting" ]
 do
   sleep 2
-  var=$(docker exec -it yugabyte /home/yugabyte/bin/ysqlsh -Atc 'SELECT 1')
-  if [ $var -eq 1 ]
+  var=$(docker exec yugabyte /home/yugabyte/bin/ysqlsh -Atc "SELECT 'accepting'")
+  if [ "$var" = "accepting" ]
   then
-                echo "done" >> /root/katacoda-background-finished
-        fi
+    echo "done" >> /root/katacoda-background-finished
+  fi
 done
